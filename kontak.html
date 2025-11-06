@@ -60,13 +60,22 @@
     <h2 class="text-2xl font-bold mb-4">HUBUNGI KAMI</h2>
     <div class="flex flex-col items-center space-y-4">
 
-      <!-- WhatsApp -->
+      <!-- WhatsApp 1 -->
       <button id="whatsappBtn"
               class="flex items-center space-x-3 border px-5 py-2 rounded-lg shadow hover:bg-green-50 transition w-56 justify-center">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-green-600">
           <path d="M.057 24l1.687-6.163a11.896 11.896 0 0 1-1.62-5.945C.124 5.305 5.48 0 12.04 0c3.2 0 6.203 1.245 8.457 3.498A11.832 11.832 0 0 1 24 11.999c0 6.558-5.355 11.914-11.944 11.999A11.88 11.88 0 0 1 .057 24z"/>
         </svg>
-        <span class="font-medium text-sm">WhatsApp Kami</span>
+        <span class="font-medium text-sm">WhatsApp Kami 1</span>
+      </button>
+
+      <!-- WhatsApp 2 -->
+      <button id="whatsappBtn2"
+              class="flex items-center space-x-3 border px-5 py-2 rounded-lg shadow hover:bg-green-50 transition w-56 justify-center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-green-600">
+          <path d="M.057 24l1.687-6.163a11.896 11.896 0 0 1-1.62-5.945C.124 5.305 5.48 0 12.04 0c3.2 0 6.203 1.245 8.457 3.498A11.832 11.832 0 0 1 24 11.999c0 6.558-5.355 11.914-11.944 11.999A11.88 11.88 0 0 1 .057 24z"/>
+        </svg>
+        <span class="font-medium text-sm">WhatsApp Kami 2</span>
       </button>
 
       <!-- Instagram -->
@@ -129,10 +138,18 @@
     closeMenu.addEventListener('click', closeMobileMenu);
     overlay.addEventListener('click', closeMobileMenu);
 
-    // WhatsApp
+    // WhatsApp 1
     document.getElementById('whatsappBtn').addEventListener('click', (e) => {
       e.preventDefault();
       const phoneDigits = '6281333504464';
+      const text = encodeURIComponent('Halo Leny Copy Centre, saya ingin menanyakan layanan.');
+      window.open(`https://wa.me/${phoneDigits}?text=${text}`, '_blank');
+    });
+
+    // WhatsApp 2
+    document.getElementById('whatsappBtn2').addEventListener('click', (e) => {
+      e.preventDefault();
+      const phoneDigits = '628132191676';
       const text = encodeURIComponent('Halo Leny Copy Centre, saya ingin menanyakan layanan.');
       window.open(`https://wa.me/${phoneDigits}?text=${text}`, '_blank');
     });
@@ -146,5 +163,4 @@
 
 </body>
 </html>
-
 
